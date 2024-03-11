@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background4"
+    tools:context=".AdminLoginScreen">
+
+    <TextView
+        android:id="@+id/adminuser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:text="User Name*"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/adminusername"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.55"
+        app:layout_constraintVertical_chainStyle="packed">
+
+    </TextView>
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/adminusername"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/custom_edittext"
+        android:backgroundTint="#fff"
+        android:inputType="text|textPersonName"
+        android:paddingStart="15sp"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/adpass"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/adminuser">
+
+    </androidx.appcompat.widget.AppCompatEditText>
+
+    <TextView
+        android:id="@+id/adpass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:text="Password*"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/adminpassword"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/adminusername">
+
+    </TextView>
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/adminpassword"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/custom_edittext"
+        android:backgroundTint="#fff"
+        android:inputType="number"
+        android:paddingStart="15sp"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/adminlogin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/adpass">
+
+    </androidx.appcompat.widget.AppCompatEditText>
+
+    <Button
+        android:id="@+id/adminlogin"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:backgroundTint="#FFAB00"
+        android:fontFamily="@font/adamina"
+        android:text="LOG IN"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:cornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/adminpassword" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginBottom="100dp"
+        app:layout_constraintBottom_toTopOf="@+id/adminusername"
+        app:layout_constraintEnd_toEndOf="@+id/adminusername"
+        app:layout_constraintStart_toStartOf="@+id/adminusername"
+        app:srcCompat="@drawable/adminicon" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
